@@ -17,14 +17,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [HomeController::class, 'home'])->name('home');
 Route::post('/login', [HomeController::class, 'login'])->name('login');
 Route::get('/dashboard', [HomeController::class, 'dashboard'])->name('dashboard');
-
-
-
-
-// Route::get('/all-url-list', [HomeController::class, 'allUrlList'])->name('all_url_list');
-// Route::post('/shorten', [HomeController::class, 'shorten'])->name('shorten');
-// Route::get('/{shortCode}', [HomeController::class, 'redirect']);
-
-
-
+Route::post('/create-user', [HomeController::class, 'createUser'])->name('create-user');
 
