@@ -63,13 +63,13 @@
         <form action="{{ route('login') }}" method="POST">
             @csrf
             <div class="form-group">
-                <input type="text" name="username" class="form-control" placeholder="Username" >
+                <input type="text" name="username" class="form-control" placeholder="Username" required>
             </div>
             @error('username')
                 <span class="invalid-feedback" class="text-danger">{{ $message }}</span>
             @enderror
             <div class="form-group">
-                <input type="password" name="password" class="form-control" placeholder="Password" >
+                <input type="password" name="password" class="form-control" placeholder="Password" required>
             </div>
             <button type="submit" class="btn btn-primary btn-block">Sign In</button>
         </form>

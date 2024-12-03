@@ -39,19 +39,19 @@ php artisan migrate
 php artisan serve
 ```
 
-### 6. Access the application at 
-```bash
-http://localhost:8000
-```
-
-
-### 7. Seeder (Optional)
+### 6. Seeder 
 ```bash
 php artisan db:seed
 ```
 
 
-## 7. Credentials 
+### 7. Access the application at 
+```bash
+http://localhost:8000
+```
+
+
+## Credentials 
 
 - Username : admin
 - Password : admin123

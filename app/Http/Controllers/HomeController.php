@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace App\Http\Controllers;
 
 use App\Models\User;
+use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;
@@ -61,7 +62,11 @@ final class HomeController
             'password' => bcrypt($validatedData['password']),
         ]);
 
-        User::created($data);
+        try {
+            User::create($data);
+        } catch (Exception $e) {
+            return redirect()->back()->withErrors($e->getMessage());
+        }
 
         return redirect()->back()->with('success', 'User created successfully!');
     }

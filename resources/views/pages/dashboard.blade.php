@@ -33,31 +33,31 @@
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="inputEmail4">Name</label>
-                    <input type="text" name="name" class="form-control" id="inputEmail4" placeholder="Name">
+                    <input type="text" name="name" class="form-control" placeholder="Name" required>
                 </div>
                 <div class="form-group col-md-6">
                     <label for="inputEmail4">Email</label>
-                    <input type="email" name="email" class="form-control" id="inputEmail4" placeholder="Email">
+                    <input type="email" name="email" class="form-control" id="inputEmail4" placeholder="Email" required>
                 </div>
             </div>
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="inputEmail4">Phone</label>
-                    <input type="text" name="phone" class="form-control" placeholder="Phone">
+                    <input type="text" name="phone" class="form-control" placeholder="Phone" required>
                 </div>
                 <div class="form-group col-md-6">
                     <label>Address</label>
-                    <textarea name="address"  class="form-control"  cols="30" rows="5"></textarea>
+                    <textarea name="address"  class="form-control"  cols="30" rows="5" required></textarea>
                 </div>
             </div>
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="inputEmail4">Password</label>
-                    <input type="password" name="password" class="form-control">
+                    <input type="password" name="password" class="form-control" required>
                 </div>
                 <div class="form-group col-md-6">
                     <label for="inputEmail4">Confirm Password</label>
-                    <input type="password" name="password_confirmation" class="form-control">
+                    <input type="password" name="password_confirmation" class="form-control" required>
                 </div>
             </div>
             <button type="submit" class="btn btn-primary">Sign in</button>
