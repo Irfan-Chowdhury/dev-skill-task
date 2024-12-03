@@ -57,7 +57,7 @@ final class HomeController
         ]);
 
         $data = array_merge($validatedData,[
-            'username' => $request->name . '_' . Str::random(3),
+            'username' => Str::random(6),
             'is_active' => true,
             'password' => bcrypt($validatedData['password']),
         ]);
